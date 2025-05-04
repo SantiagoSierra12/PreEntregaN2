@@ -48,3 +48,12 @@ p{
 img{
     margin: 20px;
 }
+
+.imagen-hover {
+    transition: transform 0.3 ease;
+    cursor: pointer
+}
+
+.imagen-hover:hover {
+    transform: scale(1.05);
+}
