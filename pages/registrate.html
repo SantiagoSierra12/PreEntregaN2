@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitioWeb Santiago Lopez Sierra</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <form action="#" method="get">
+                <div style="text-align: right;">
+                    <input type="text" name="busqueda" placeholder="buscar">
+                    <input type="submit" value="buscar">
+                </div>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./registrate.html">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="Nombre">Nombre y Apellido</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="E-mail">E-mail</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="Consulta">Tu Consulta</label><br>
+            <textarea id="consulta" name="consulta" rows="5" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Registrate">
+        </form>
+    </main>
+</body>
+</html>
