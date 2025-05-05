@@ -57,3 +57,11 @@ img{
 .imagen-hover:hover {
     transform: scale(1.05);
 }
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+    
+}
