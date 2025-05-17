@@ -1,1 +1,109 @@
-$primary-color: rgb(216, 143, 6);
+$primary-color: rgb(5, 126, 240);
+
+$primary-font: 'Arial', sans-serif;
+
+$padding-base: 16px;
+
+$background-color: rgb(247, 247, 247);
+
+@mixin estilo-nav-link($color, $hoverColor) {
+    color: $color;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+
+&:hover {
+    color: $hoverColor;
+    transform: scale(1.05); // efecto al pasar el cursor
+}
+}
+
+.navbar-personalizada{
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link {
+    @include estilo-nav-link(#333, #007bff);
+    font-size: 18px;
+    border-radius: 4px;
+
+    &:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    }
+}
+
+  // 🌐 Responsividad
+@media (max-width: 600px) {
+    .nav {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .nav-link {
+    font-size: 16px;
+    padding: 10px 20px;
+    }
+}
+
+
+
+body{
+    background-color: rgb(202, 213, 216);
+    text-align: center;
+}
+
+h1{
+    color: $primary-color;
+    text-align: center;
+    background-color: $background-color;
+    border: 1px white; 
+}
+
+header{
+    padding: $padding-base;
+}
+
+img {
+    max-width: 100%;        
+    height: auto;           
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+    }
+}
+
+footer{
+    padding: $padding-base;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;               
+    justify-content: center;
+    gap: 20px;                   
+    flex-wrap: wrap; 
+}
