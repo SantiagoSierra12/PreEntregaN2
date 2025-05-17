@@ -15,7 +15,7 @@ $background-color: rgb(247, 247, 247);
 
 &:hover {
     color: $hoverColor;
-    transform: scale(1.05); // efecto al pasar el cursor
+    transform: scale(1.05); 
 }
 }
 
@@ -46,7 +46,6 @@ $background-color: rgb(247, 247, 247);
     }
 }
 
-  // 🌐 Responsividad
 @media (max-width: 600px) {
     .nav {
     flex-direction: column;
